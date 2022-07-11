@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTBC - Blog</title>
+    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cookienotice.js.org/cookienotice.min.css">
+</head>
+
+<body>
+  <div class="page-wrap">
+    <div class="annoucement">
+        <img src="assets\starr.png" class="starr">
+        <a href="donation.html">
+          <p class="atext"> we are doing a pet food drive!</p>
+        </a> <img src="assets\starr.png" class="starr">
+      </div>
+      <!-- Main Navigation Menu -->
+      <nav class="navbar">
+        <div class="catright">
+          <a href="index.html">
+            <img src="./assets/ltbc-wob-logo-withtext.png" alt="cat logo" class="catlogo">
+          </a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+          <li class="list-item li-margin">
+            <a href="petfoodbank.html" class="natgeo_underline">Apply</a>
+          </li>
+          <li class="list-item dropdown">
+            <a href="generalresourcespage.html" class="natgeo_underline">resources</a>
+            <ul class="dropdown-content">
+       
+              <a href="blog.html"  class="purplehover">blog</a>
+              <li><a href="aboutus.html" class="purplehover">About Us</a></li>
+            </ul>
+          </li>
+          <li class="list-item">
+            <a href="donation.html" class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"
+                />
+              </svg>
+              <p class="support">Donate</p>
+            </a>
+          </li>
+        </ul>
+        <!-- Toggle Button -->
+        <div class="menu" id="toggleButton">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      </nav>
+      <!-- Main Navigation Menu END -->
+    
+      <div class="line"></div>
+     
+    <div class="blog-container">
+      <div class="blog-inner">
+        <div class="blog-header">
+          <h1 class="inline blog-h1">blog<span class="ltbc-hl">.</span></h1>
+          <div class="line"></div>
+          <h2></h2>
+          <p class="description">We create entertaining content and share valuable information about cats! Sometimes </p>
+        </div>
+        <div class="blog-list">
+          <div class="row">
+         
+
+          <div class="blog-block">
+            <img src="./assets\tah-lelouch.png" alt="" class="blog-thumbnail">
+            <p class="blog-title">From stray to indoor: Cat transformations that will bring you peace.</p>
+            <div class="meta">by Nia Daniels | May 3, 2021 | Story</div>
+            <a href="Why-I-Started-LTBC.html" class="read-more">read more</a>
+          </div>
+
+          <div class="blog-block">
+            <a href="Organic-Toys-Your-Cat-Will-Love.html">
+            <img src="./assets\sprinkles1.png" alt="" class="blog-thumbnail">
+            <p class="blog-title">Organic Cat Toys Your Cat Will Love</p>
+            <div class="meta">by Nia Daniels | May 3, 2021 | Story</div>
+            <a href="Organic-Toys-Your-Cat-Will-Love.html" class="read-more">read more</a>
+          </div>
+
+          <div class="blog-block">
+            <a href="Why-I-Started-LTBC.html">
+            <img src="./assets\ME-AND-HANA.png" alt="" class="blog-thumbnail">
+            <p class="blog-title">Why I Started LTBC</p>
+            <div class="meta">by Nia Daniels | May 3, 2021 | Story</div>
+            <a href="Why-I-Started-LTBC.html" class="read-more">read more</a>
+          </div>
+
+          <div class="blog-block">
+            <a href="Can-cats-drink-alkaline-water.html">
+            <img src="./assets\confirmation.png" alt="" class="blog-thumbnail">
+            <p class="blog-title">Can Cats Drink Alkaline Water</p></a>
+            <div class="meta">by Nia Daniels | May 3, 2021 | Story</div>
+            <a href="Can-cats-drink-alkaline-water.html" class="read-more">read more</a>
+          </div>
+
+        
+          
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+    
+      <footer>
+    
+        <a>sitemap</a>
+        <a href="mailto: hi.lettherebecats@gmail.com" class="spacemid">contact</a>
+    
+    
+        <a>© 2022 Lets Feed These Cats </a>
+        <img src="assets\ig.png" class="catstagram">
+    
+    
+      </footer>
+    </div>
+      <div id="cookie-notice" style="background-color:#D7C4EE; border-color:transparent;">
+        We use cookies to deliver better experience.
+        <a href="https://cookienotice.js.org/about-cookies" class="cookie-notice-more" style="text-decoration: underline;"
+          target="_blank" rel="noopener">More info...</a>
+        <a href="javascript:void(0)" class="cookie-notice-close"
+          style="background-color:#000000d0; border:none;border-radius:2px" onclick="closeCookieNotice()">OK</a>
+      </div>
+      <script src="https://cookienotice.js.org/cookienotice.min.js"></script>
+      <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const naviList = document.getElementById('navi-list');
+    
+        toggleButton.addEventListener('click', () => {
+          naviList.classList.toggle('active');
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,792 @@
+@font-face {
+  font-family: 'Nightingale';
+  src: url('./fonts/Nightingale-Light.woff2') format('woff2'),
+    url('./fonts/Nightingale-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Sailec';
+  src: url('./fonts/Sailec-Regular.woff2') format('woff2'),
+    url('./fonts/Sailec-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+:root {
+  --mainwhite: #fefefe;
+  --lavender: rgb(215, 196, 238);
+  --black: #000000d0;
+}
+
+::selection {
+  background: var(--lavender);
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 14px;
+  background: var(--lavender);
+  border-radius: 7px;
+}
+
+
+
+body, html {
+  min-height: 100%;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--mainwhite);
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  color: var(--brown-color);
+  cursor: pointer;
+
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+h1, h2 {
+  font-family: 'Sailec';
+  font-size: 7em;
+  font-weight: normal;
+  color: var(--black);
+}
+
+p {
+  font-family: 'Nightingale';
+  color: var(--black);
+  font-size: 2.8em;
+}
+
+.atext {
+  font-size: 1.3em;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  font-family: 'Sailec';
+  color: var(--black);
+}
+
+.annoucement {
+  background-color: var(--lavender);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  inset: 0;
+  z-index: 5;
+}
+
+.starr {
+  width: 1em;
+
+}
+
+.starr:nth-child(1) {
+  margin-right: 7px;
+}
+
+.starr:nth-last-child(1) {
+  margin-left: 7px;
+}
+
+
+ul {
+  list-style: none;
+  /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+
+.dropdown-content {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  border-radius: 4px;
+  right: -33px;
+  top: 100%;
+  box-shadow: 0 13px 20px rgb(197, 197, 197);
+}
+
+.purplehover {
+  display: inline-block;
+  background: var(--mainwhite);
+  text-decoration: none;
+  -webkit-transition: background .3s;
+  /* For Safari 3.0 to 6.0 */
+  transition: background .3s;
+  /* For modern browsers */
+}
+
+.paw-icon {
+  display: inline-block;
+  width: 16px;
+  margin-right: 12px;
+}
+
+.purplehover:hover {
+  background: #343A60;
+  color: white;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 15px 10px;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 18px;
+
+  text-align: center;
+
+}
+
+.purplehover {
+
+  border-radius: 4px;
+}
+
+
+
+.dropdown-content:hover {
+  display: block;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  width: 33px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 6px;
+}
+
+nav {
+  font-family: 'Sailec';
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+
+.navbar {
+  background-color: var(--mainwhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 63.5%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 23px;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  border-bottom: solid 2px var(--lavender);
+}
+
+
+
+#cathomepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#cathomepageinner {
+  max-width: 63%;
+  margin: 0 auto;
+}
+
+.gemtext {
+  background: url('https://media.istockphoto.com/photos/diamond-background-picture-id520641063?k=20&m=520641063&s=612x612&w=0&h=oHpPSkGkYK2--gHJruV1vLXVIU6Qot5YBC549ZM6eGw=') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+}
+
+.previewsection {
+  display: flex;
+  min-height: 60.5vh;
+  max-width: 63%;
+  margin: 0 auto;
+}
+
+/* CAT GUIDE PAGE */
+.catguide {
+  padding-bottom: 7.8%;
+}
+
+.catguide-inner {
+  padding-top: 14em;
+  max-width: 63%;
+  margin: 0 auto;
+}
+
+h1.cathy {
+  background: url('https://media0.giphy.com/media/rRVcEiqOUkPPS6NoJe/giphy.gif?cid=790b7611d01f9873866bbdbe2a42eeac652afae22c435805&rid=giphy.gif&ct=g') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 290px;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.pcat {
+  padding-left: 20%;
+  border-color: black;
+  position: relative;
+  /*background: -webkit-linear-gradient(var(--black),var(--lavender), #343a60,var(--black));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.pcat:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1.8px;
+  width: 10.5%;
+  background: #000;
+  top: 50%;
+  left: 6.2%;
+  bottom: 0;
+}
+
+
+.catlogo {
+  height: 4em;
+  width: 4em;
+}
+
+.pdfdownloadsection {
+  min-height: auto;
+  max-width: 64%;
+  margin: 0 auto;
+  margin-bottom: .8%;
+}
+
+.guidesection {
+
+  max-width: 63%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.course {
+  margin-top: .24em;
+  font-size: 3.2em;
+}
+
+
+.circle {
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-flex;
+  color: var(--mainwhite);
+  text-align: center;
+  background: var(--black);
+  margin-right: -14px;
+
+}
+
+.pdf {
+  width: 60%;
+  font-size: 26px;
+  font-family: 'Nightingale';
+}
+
+.guidesectionh2 {
+  padding-top: .25em;
+  padding-bottom: .2em;
+}
+
+.downloadsection>p {
+  font-family: 'Sailec';
+
+}
+
+.h3 {
+  font-size: 2.8em;
+  padding-bottom: 1.2em;
+}
+
+.downloadsection {
+  font-family: 'Sailec';
+  max-height: 39vh;
+  max-width: 82%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0 100px;
+}
+
+
+.downloadlink {
+  font-size: 1.75em;
+  padding: 20px 36px;
+  background-color: var(--lavender);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--black);
+  display: flex;
+  height: 70px;
+  padding: 0 20%;
+  color: white;
+  font-family: 'Sailec';
+  vertical-align: middle;
+  align-items: center;
+  font-size: .96em;
+  justify-content: space-between;
+
+
+}
+
+#wrapper {
+  /*min-height: 100%;*/
+  position: relative;
+  min-width: 300px;
+}
+
+#footer {
+  background-color: var(--black);
+  display: flex;
+  height: 44px;
+  padding: 0 20%;
+  color: white;
+  font-family: 'Sailec';
+  vertical-align: middle;
+  align-items: center;
+  font-size: .96em;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+footer > a {
+  padding-right: 14px;
+}
+
+.spacemid {
+  margin-right: 40%;
+}
+
+.catstagram {
+  width: 2.3em;
+}
+
+
+
+@media (min-width: 1281px) {
+  h2 {
+    font-size: 5.5em;
+  }
+
+  .pcat {
+    font-size: 2.45em;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* CSS */
+  footer {
+    padding: 0 19%;
+
+  }
+
+  .spacemid {
+    margin-right: 27%;
+  }
+
+  .pcat {
+    font-size: 2.25em;
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  .navbar, .catguide, .guidesection, .pdfdownloadsection {
+    max-width: 70%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS */
+  footer {
+    background-color: var(--black);
+    display: flex;
+    height: 72px;
+    padding: 0 9%;
+    color: white;
+    font-family: 'Sailec';
+    vertical-align: middle;
+    align-items: center;
+    font-size: 1.1em;
+    justify-content: space-between;
+  }
+
+  .spacemid {
+    margin-right: 40%;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  h1.cathy {
+    font-size: 9em;
+    background-size: 300px;
+  }
+
+  .h3 {
+    font-size: 2.2em;
+  }
+
+  .downloadlink {
+    font-size: 1.4em;
+  }
+
+  .navbar, .catguide, .guidesection, .pdfdownloadsection {
+    max-width: 80%;
+  }
+
+  .guidesection {
+    padding-bottom: 4em;
+  }
+
+  .catguide-inner {
+
+    padding-bottom: 2em;
+  }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 567px) and (max-width: 767px) {
+  footer {
+    height: 72px;
+    padding: 0 2%;
+    font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  .catguide-inner {
+    padding-top: 8em;
+    padding-bottom: 5em;
+  }
+
+  .course, .pcat {
+    font-size: 1.8em;
+  }
+
+  .guidesection {
+    margin-bottom: 4.5%;
+  }
+
+  .pdfdownloadsection, .catguide, .guidesection, .navbar {
+    max-width: 90%;
+  }
+
+  .spacemid {
+    margin-right: 5%;
+  }
+
+  .catstagram {
+    width: 1.3em;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 567px) {
+  h2 {
+    font-size: 2.9em;
+  }
+
+  .course, .pcat {
+    font-size: 1.8em;
+  }
+
+  .guidesection, .catguide, .pdfdownloadsection {
+    max-width: 90%;
+  }
+
+  .catguide {
+
+    padding-bottom: 30%;
+  }
+
+  .catguide-inner {
+    padding-top: 8em;
+  }
+
+  .h3 {
+    font-size: 2.2em;
+  }
+
+  .navbar {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 9em;
+    background-size: 300px;
+  }
+
+  .downloadsection {
+    margin-top: 90px;
+  }
+
+  footer {
+    padding: 0 1%;
+
+  }
+
+  footer > a {
+    padding-right: 8px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .catguide-inner {
+    padding-top: 10em;
+    padding-bottom: 6em;
+  }
+
+  .h3 {
+    font-size: 1.85em;
+  }
+
+  .course {
+    font-size: 24px;
+  }
+
+  .downloadsection {
+    min-height: 25vh;
+  }
+
+  .catguide, .guidesection, .pdfdownloadsection {
+    max-width: 90%;
+    padding-bottom: 10%;
+    min-height: fit-content;
+  }
+
+  .pcat {
+    font-size: 1.11em;
+  }
+
+  .downloadlink {
+    font-size: 1em;
+  }
+
+  .catstagram {
+    width: 2em;
+  }
+
+  .spacemid {
+    margin-right: 10%;
+  }
+
+  footer {
+    padding: 0 8%;
+  }
+
+  footer>a {
+    padding-right: 8px;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    border-top: 2px solid var(--lavender);
+  }
+
+
+  .nav-list {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+
+  
+  .active {
+    display: block;
+  }
+
+  .catright {
+    width: 100%;
+  }
+
+  .catlogo {
+    margin-left: 10px;
+  }
+
+  .navbar {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 72px;
+  }
+}
+
+/*ALTERNATIVES (IGNORE)
+
+.dropdown-content {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: var(--mainwhite);
+  box-shadow: 0 20px 20px;
+  transition: 0.3s color;
+  border-radius: 4px;
+  right: -33px;
+  top: 100%;
+
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background: #343A60;
+  border-radius: 4px;
+}
+*/

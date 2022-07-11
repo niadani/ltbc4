@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>cats</title>
+  <link href="./css/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cookienotice.js.org/cookienotice.min.css">
+  <link rel="icon" type="image/x-icon" href="../assets/ltbc-logo-bw1.ico">
+  <link rel="preload" href="Sailec-Regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+
+  <div class="annoucement">
+    <img src="assets\starr.png" class="starr">
+    <a href="donation.html">
+      <p class="atext"> we are doing a pet food drive!</p>
+    </a> <img src="assets\starr.png" class="starr">
+  </div>
+  <!-- Main Navigation Menu -->
+  <nav class="navbar">
+    <div class="catright">
+      <a href="index.html">
+        <img src="\assets/ltbc-wob-logo-withtext.png" alt="cat logo" class="catlogo">
+      </a>
+    </div>
+    <ul class="nav-list" id="navi-list">
+      <li class="list-item li-margin">
+        <a href="petfoodbank.html" class="natgeo_underline">Apply</a>
+      </li>
+      <li class="list-item dropdown">
+        <a href="generalresourcespage.html" class="natgeo_underline">resources</a>
+        <ul class="dropdown-content">
+          
+          <a href="blog.html"  class="purplehover">blog</a>
+          <li><a href="aboutus.html" class="purplehover">About Us</a></li>
+        </ul>
+      </li>
+      <li class="list-item">
+        <a href="donation.html" class="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path
+              d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"
+            />
+          </svg>
+          <p class="support">Donate</p>
+        </a>
+      </li>
+    </ul>
+    <!-- Toggle Button -->
+    <div class="menu" id="toggleButton">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </nav>
+  <!-- Main Navigation Menu END -->
+
+  <div class="line"></div>
+  <div id="tripetto"></div>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-classic"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNGZVeTk5Sk0wWTdOeWdwVFpGTXZmY0dFSE1ITUp2d3FtYmQ2S0Q4MllQST0iLCJkZWZpbml0aW9uIjoiL0FzZFpkcXdBVnJhNHk2NWdLV3JyTXg1VGVCbExIVmpFeCtFL2RlRDJrQT0iLCJ0eXBlIjoiY29sbGVjdCJ9.staKvsC-bjKLRL80NU8nty7Xt_xpyvgciQQXWBtvazA" });
+
+TripettoClassic.run({
+    element: document.getElementById("tripetto"),
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit,
+    persistent: true
+});
+</script>
+
+  <script src="main.js"></script>
+
+  <footer>
+
+    <a>sitemap</a>
+    <a href="mailto: hi.lettherebecats@gmail.com" class="spacemid">contact</a>
+
+
+    <a>© 2022 Lets Feed These Cats </a>
+    <img src="assets\lettherebecats-white.png" class="catstagram">
+
+
+  </footer>
+  <div id="cookie-notice" style="background-color:#D7C4EE; border-color:transparent;">
+    We use cookies to deliver better experience.
+    <a href="https://cookienotice.js.org/about-cookies" class="cookie-notice-more" style="text-decoration: underline;"
+      target="_blank" rel="noopener">More info...</a>
+    <a href="javascript:void(0)" class="cookie-notice-close"
+      style="background-color:#000000d0; border:none;border-radius:2px" onclick="closeCookieNotice()">OK</a>
+  </div>
+  <script src="https://cookienotice.js.org/cookienotice.min.js"></script>
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+      naviList.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
